@@ -8,11 +8,9 @@ option objc_class_prefix = "GRP";
 package server;
 
 service Server {
-    // Sends a greeting
     rpc Status (StatusRequest) returns (StatusReply) {}
 }
 
-// The request message containing the user's name.
 message StatusRequest {
 }
 
