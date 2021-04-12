@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "crux.grpc.server";
+option java_outer_classname = "GrpcServerProto";
+option objc_class_prefix = "GRP";
+
+package server;
+
+service Server {
+    // Sends a greeting
+    rpc Status (StatusRequest) returns (StatusReply) {}
+}
+
+// The request message containing the user's name.
+message StatusRequest {
+}
+
+message StatusReply {
+    string message = 1;
+}
