@@ -15,9 +15,9 @@
 (def SERVER_PORT 50051)
 
 (defn start []
-  (let [greeter-service (new ServerImpl)
+  (let [service (new ServerImpl)
         server (-> (ServerBuilder/forPort SERVER_PORT)
-                   (.addService greeter-service)
+                   (.addService service)
                    (.build)
                    (.start))]
     (-> (Runtime/getRuntime)
