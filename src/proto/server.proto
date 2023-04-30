@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "crux.grpc.server";
+option java_package = "xtdb.grpc.server";
 option java_outer_classname = "GrpcServerProto";
 option objc_class_prefix = "GRP";
 
