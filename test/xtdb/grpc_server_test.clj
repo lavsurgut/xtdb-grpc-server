@@ -5,7 +5,7 @@
            [xtdb.grpc.server ServerGrpc]
            [xtdb.grpc.server StatusRequest]
            [xtdb.grpc.server StatusReply]))
-
+;; for now tests are running only if a real server is launched in background
 (def client (ServerGrpc/newBlockingStub
               (-> (ManagedChannelBuilder/forAddress "localhost" (int default_port))
                   (.usePlaintext)
