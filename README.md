@@ -1,6 +1,6 @@
 # xtdb-grpc-server
 
-XTDB is a general-purpose bitemporal [db](https://github.com/xtdb/xtdb).
+[XTDB](https://github.com/xtdb/xtdb) is a general-purpose bitemporal db.
 
 This is an example module of a gRPC server that allows you to send transactions and run queries via a gRPC API. 
 
