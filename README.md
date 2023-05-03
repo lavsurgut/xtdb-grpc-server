@@ -1,6 +1,8 @@
 # xtdb-grpc-server
 
-This is an example module of a gRPC server that allows you to send transactions and run queries via a gRPC API.
+XTDB is a general-purpose bitemporal [db](https://github.com/xtdb/xtdb).
+
+This is an example module of a gRPC server that allows you to send transactions and run queries via a gRPC API. 
 
 ## Run locally
 
