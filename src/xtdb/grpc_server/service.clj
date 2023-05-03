@@ -1,11 +1,11 @@
-(ns xtdb.service
+(ns xtdb.grpc_server.service
   (:gen-class
-    :name xtdb.service.ServerImpl
+    :name xtdb.grpc_server.service.ServerImpl
     :extends
-    xtdb.grpc.server.ServerGrpc$ServerImplBase)
+    proto.xtdb.grpc.server.ServerGrpc$ServerImplBase)
   (:import
     [io.grpc.stub StreamObserver]
-    [xtdb.grpc.server StatusReply]))
+    [proto.xtdb.grpc.server StatusReply]))
 
 
 (defn -status [this req res]
